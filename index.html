@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Om Voice Counter</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+<h1>🕉️ Om Voice Counter App</h1>
+
+<div class="card">
+  <h2>Total Count</h2>
+  <h1 id="count" class="big-number">0</h1>
+</div>
+
+<div class="card">
+  <h2>Progress</h2>
+  <div class="progress">
+    <div id="bar"></div>
+  </div>
+  <input id="target" type="number" placeholder="Enter target count">
+</div>
+
+<div class="card mic-card">
+  <h2>Voice Listener</h2>
+  <div id="mic" class="mic">🎤</div>
+  <p id="statusMsg">Not listening</p>
+
+  <div class="btn-row">
+    <button id="startBtn" class="primary">Start</button>
+    <button id="stopBtn" class="danger">Stop</button>
+    <button id="resetBtn" class="warning">Reset</button>
+  </div>
+</div>
+
+<div class="card">
+  <h2>Session History</h2>
+  <ul id="history"></ul>
+</div>
+
+<div class="card">
+  <h2>Theme</h2>
+  <button id="themeBtn" class="primary">Toggle Dark / Light</button>
+</div>
+
+<audio id="beep"
+ src="https://assets.mixkit.co/sfx/preview/mixkit-bell-notification-933.mp3">
+</audio>
+
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,81 @@
+body {
+  margin: 0;
+  padding: 12px;
+  font-family: Arial, sans-serif;
+  background: #f2f4ff;
+}
+
+/* Dark mode */
+body.dark { background: #0f1322; color: white; }
+body.dark .card { background: #181c2f; color: white; }
+
+h1 { text-align: center; }
+
+/* Card layout */
+.card {
+  background: white;
+  padding: 15px;
+  border-radius: 12px;
+  margin-bottom: 12px;
+  box-shadow: 0 2px 10px rgba(0,0,0,.1);
+}
+
+.big-number { font-size: 46px; margin: 0; }
+
+/* Progress bar */
+.progress {
+  height: 10px;
+  background: #ddd;
+  border-radius: 20px;
+  margin-bottom: 8px;
+}
+#bar {
+  height: 100%;
+  width: 0%;
+  background: #3ad65a;
+  border-radius: 20px;
+}
+
+/* Buttons */
+button {
+  padding: 8px 12px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  margin-right: 5px;
+  font-weight: bold;
+}
+
+.primary { background: #4b7bff; color: white; }
+.danger  { background: crimson; color: white; }
+.warning { background: #ffd84d; }
+
+.btn-row { margin-top: 6px; }
+
+/* Mic icon bubble */
+.mic {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: #252b44;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 34px;
+  margin: 8px auto;
+}
+.listening { animation: pulse 1.2s infinite; }
+
+@keyframes pulse {
+  from { transform: scale(1); }
+  to   { transform: scale(1.12); }
+}
+
+/* History list */
+ul { padding-left: 18px; }
+
+/* Mobile friendly */
+@media (max-width: 480px) {
+  .card { margin-bottom: 10px; }
+  .big-number { font-size: 38px; }
+}
